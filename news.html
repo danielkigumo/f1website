@@ -2,92 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest News | Formula 1 World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>News - F1 World</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-flag-checkered me-2"></i>F1 WORLD
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="bg-dark text-white py-5 mb-5" style="border-bottom: 4px solid #e10600;">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold">LATEST NEWS</h1>
-            <p class="lead">Breaking headlines from the paddock and beyond.</p>
-        </div>
+    <!-- Header -->
+    <header>
+        <h1>F1 World</h1>
+        <p>The Ultimate Formula 1 Experience</p>
     </header>
 
-    <main class="container mb-5">
-        <div class="row g-4">
-            <!-- News Item 1 -->
-            <div class="col-md-6 col-lg-4">
-                <article class="card h-100 border-0 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1541139363654-718227092984?q=80&w=800" class="card-img-top" alt="Tech Update">
-                    <div class="card-body">
-                        <span class="text-danger small fw-bold text-uppercase">Technical</span>
-                        <h3 class="h5 mt-2">The Secret Behind the New Floor Regulations</h3>
-                        <p class="card-text small text-muted">A deep dive into how teams are adapting to the latest aerodynamic changes for the upcoming season.</p>
-                        <a href="#" class="btn btn-link p-0 text-danger text-decoration-none fw-bold">READ MORE <i class="fas fa-chevron-right ms-1"></i></a>
-                    </div>
-                </article>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="drivers.html">Drivers</a>
+        <a href="teams.html">Teams</a>
+        <a href="races.html">Races</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar left-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Race Reports</a></li>
+                <li><a href="#">Technical</a></li>
+                <li><a href="#">Paddock Talk</a></li>
+                <li><a href="#">Driver News</a></li>
+            </ul>
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Latest News</h2>
+            <p>Breaking headlines from the paddock and beyond.</p>
+
+            <div class="news-article">
+                <p class="category">TECHNICAL</p>
+                <h3>The Secret Behind the New Floor Regulations</h3>
+                <p>
+                    A deep dive into how teams are adapting to the latest aerodynamic changes for the
+                    upcoming season. Engineers across the paddock have been working around the clock
+                    to find new ways to generate downforce within the updated regulations.
+                </p>
+                <a href="#">Read More &rsaquo;</a>
             </div>
-            <!-- News Item 2 -->
-            <div class="col-md-6 col-lg-4">
-                <article class="card h-100 border-0 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800" class="card-img-top" alt="Driver News">
-                    <div class="card-body">
-                        <span class="text-danger small fw-bold text-uppercase">Paddock Talk</span>
-                        <h3 class="h5 mt-2">Hamilton's First Day in Maranello Red</h3>
-                        <p class="card-text small text-muted">Exclusive photos and insights as the seven-time champion visits the Ferrari factory for the first time.</p>
-                        <a href="#" class="btn btn-link p-0 text-danger text-decoration-none fw-bold">READ MORE <i class="fas fa-chevron-right ms-1"></i></a>
-                    </div>
-                </article>
+
+            <div class="news-article">
+                <p class="category">PADDOCK TALK</p>
+                <h3>Hamilton's First Day in Maranello Red</h3>
+                <p>
+                    Exclusive insights as the seven-time champion visits the Ferrari factory for the
+                    first time. Hamilton was seen touring the production floor and meeting key members
+                    of the engineering team ahead of the 2026 season.
+                </p>
+                <a href="#">Read More &rsaquo;</a>
             </div>
-            <!-- News Item 3 -->
-            <div class="col-md-6 col-lg-4">
-                <article class="card h-100 border-0 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800" class="card-img-top" alt="Race Recap">
-                    <div class="card-body">
-                        <span class="text-danger small fw-bold text-uppercase">Race Report</span>
-                        <h3 class="h5 mt-2">Winter Testing: Who is Leading the Pack?</h3>
-                        <p class="card-text small text-muted">Analyzing the lap times and reliability from the three days of testing in Bahrain.</p>
-                        <a href="#" class="btn btn-link p-0 text-danger text-decoration-none fw-bold">READ MORE <i class="fas fa-chevron-right ms-1"></i></a>
-                    </div>
-                </article>
+
+            <div class="news-article">
+                <p class="category">RACE REPORT</p>
+                <h3>Winter Testing: Who is Leading the Pack?</h3>
+                <p>
+                    Analyzing the lap times and reliability data from the three days of testing in
+                    Bahrain. McLaren and Red Bull look strong on the long runs, while Ferrari showed
+                    impressive one-lap pace during the final session.
+                </p>
+                <a href="#">Read More &rsaquo;</a>
             </div>
-        </div>
-    </main>
+
+            <div class="news-article">
+                <p class="category">DRIVER NEWS</p>
+                <h3>Verstappen Signs Multi-Year Deal with Red Bull</h3>
+                <p>
+                    Max Verstappen has committed his future to Oracle Red Bull Racing by signing a
+                    long-term contract extension. The four-time world champion said the team's new
+                    engine project was a key factor in his decision.
+                </p>
+                <a href="#">Read More &rsaquo;</a>
+            </div>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right-sidebar">
+            <h3>Most Read</h3>
+            <ul>
+                <li><a href="#">Hamilton at Ferrari</a></li>
+                <li><a href="#">New 2026 Regulations</a></li>
+                <li><a href="#">Verstappen Contract</a></li>
+                <li><a href="#">McLaren Testing</a></li>
+            </ul>
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+            </ul>
+        </aside>
+
+    </div><!-- end .container -->
 
     <!-- Footer -->
-    <footer class="py-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Formula 1 World. All Rights Reserved.</p>
-        </div>
+    <footer>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="teams.html">Teams</a>
+            <a href="races.html">Races</a>
+            <a href="contact.html">Contact</a>
+        </p>
+        <p>&copy; 2026 F1 World. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
