@@ -2,110 +2,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Race Calendar | Formula 1 World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Race Calendar - F1 World</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-flag-checkered me-2"></i>F1 WORLD
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="races.html">Races</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="bg-dark text-white py-5 mb-5" style="border-bottom: 4px solid #e10600;">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold">2026 RACE CALENDAR</h1>
-            <p class="lead">From the glamour of Monaco to the speed of Monza.</p>
-        </div>
+    <!-- Header -->
+    <header>
+        <h1>F1 World</h1>
+        <p>The Ultimate Formula 1 Experience</p>
     </header>
 
-    <main class="container mb-5">
-        <div class="row g-4">
-            <!-- Race 1 -->
-            <div class="col-12">
-                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
-                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
-                        <span class="h4 mb-0 fw-bold">14</span>
-                        <span class="small text-uppercase">MAR</span>
-                    </div>
-                    <div class="p-4 flex-grow-1">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <h3 class="h5 mb-1">Australian Grand Prix</h3>
-                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Albert Park Circuit, Melbourne</p>
-                            </div>
-                            <span class="badge bg-dark">ROUND 1</span>
-                        </div>
-                    </div>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="drivers.html">Drivers</a>
+        <a href="teams.html">Teams</a>
+        <a href="races.html">Races</a>
+        <a href="news.html">News</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar left-sidebar">
+            <h3>2026 Season</h3>
+            <ul>
+                <li>24 Races</li>
+                <li>5 Continents</li>
+                <li>Mar - Nov</li>
+            </ul>
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>2026 Race Calendar</h2>
+            <p>The 2026 Formula 1 World Championship features 24 races across 5 continents, from March to November.</p>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>14</p>
+                    <p>MAR</p>
+                </div>
+                <div class="race-info">
+                    <h3>Australian Grand Prix</h3>
+                    <p>Albert Park Circuit, Melbourne &nbsp; | &nbsp; Round 1</p>
                 </div>
             </div>
-            <!-- Race 2 -->
-            <div class="col-12">
-                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
-                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
-                        <span class="h4 mb-0 fw-bold">28</span>
-                        <span class="small text-uppercase">MAR</span>
-                    </div>
-                    <div class="p-4 flex-grow-1">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <h3 class="h5 mb-1">Saudi Arabian Grand Prix</h3>
-                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Jeddah Corniche Circuit, Jeddah</p>
-                            </div>
-                            <span class="badge bg-dark">ROUND 2</span>
-                        </div>
-                    </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>28</p>
+                    <p>MAR</p>
+                </div>
+                <div class="race-info">
+                    <h3>Saudi Arabian Grand Prix</h3>
+                    <p>Jeddah Corniche Circuit, Jeddah &nbsp; | &nbsp; Round 2</p>
                 </div>
             </div>
-            <!-- Race 3 -->
-            <div class="col-12">
-                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
-                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
-                        <span class="h4 mb-0 fw-bold">11</span>
-                        <span class="small text-uppercase">APR</span>
-                    </div>
-                    <div class="p-4 flex-grow-1">
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <h3 class="h5 mb-1">Japanese Grand Prix</h3>
-                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Suzuka International Racing Course</p>
-                            </div>
-                            <span class="badge bg-dark">ROUND 3</span>
-                        </div>
-                    </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>11</p>
+                    <p>APR</p>
+                </div>
+                <div class="race-info">
+                    <h3>Japanese Grand Prix</h3>
+                    <p>Suzuka International Racing Course &nbsp; | &nbsp; Round 3</p>
                 </div>
             </div>
-        </div>
-    </main>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>25</p>
+                    <p>APR</p>
+                </div>
+                <div class="race-info">
+                    <h3>Bahrain Grand Prix</h3>
+                    <p>Bahrain International Circuit, Sakhir &nbsp; | &nbsp; Round 4</p>
+                </div>
+            </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>09</p>
+                    <p>MAY</p>
+                </div>
+                <div class="race-info">
+                    <h3>Miami Grand Prix</h3>
+                    <p>Miami International Autodrome, Miami &nbsp; | &nbsp; Round 5</p>
+                </div>
+            </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>25</p>
+                    <p>MAY</p>
+                </div>
+                <div class="race-info">
+                    <h3>Monaco Grand Prix</h3>
+                    <p>Circuit de Monaco, Monte Carlo &nbsp; | &nbsp; Round 6</p>
+                </div>
+            </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>08</p>
+                    <p>JUN</p>
+                </div>
+                <div class="race-info">
+                    <h3>Spanish Grand Prix</h3>
+                    <p>Circuit de Barcelona-Catalunya, Barcelona &nbsp; | &nbsp; Round 7</p>
+                </div>
+            </div>
+
+            <div class="race-item">
+                <div class="race-date">
+                    <p>22</p>
+                    <p>JUN</p>
+                </div>
+                <div class="race-info">
+                    <h3>Canadian Grand Prix</h3>
+                    <p>Circuit Gilles Villeneuve, Montreal &nbsp; | &nbsp; Round 8</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right-sidebar">
+            <h3>Upcoming Races</h3>
+            <ul>
+                <li>British GP - Jul</li>
+                <li>Belgian GP - Jul</li>
+                <li>Hungarian GP - Aug</li>
+                <li>Dutch GP - Aug</li>
+                <li>Italian GP - Sep</li>
+            </ul>
+            <h3>Navigate</h3>
+            <ul>
+                <li><a href="drivers.html">Drivers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+            </ul>
+        </aside>
+
+    </div><!-- end .container -->
 
     <!-- Footer -->
-    <footer class="py-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Formula 1 World. All Rights Reserved.</p>
-        </div>
+    <footer>
+        <p>
+            <a href="index.html">Home</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="teams.html">Teams</a>
+            <a href="races.html">Races</a>
+            <a href="contact.html">Contact</a>
+        </p>
+        <p>&copy; 2026 F1 World. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
