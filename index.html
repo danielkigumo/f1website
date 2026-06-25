@@ -2,19 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 World - Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>F1 World</h1>
-        <p>The Ultimate Formula 1 Experience</p>
-    </header>
-
-    <!-- Top Navigation Bar -->
-    <nav class="top-nav">
+    <!-- Top Navigation -->
+    <div class="toplink">
         <a href="index.html">Home</a>
         <a href="drivers.html">Drivers</a>
         <a href="teams.html">Teams</a>
@@ -22,112 +17,91 @@
         <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-    </nav>
+    </div>
 
-    <!-- Main Layout -->
-    <div class="container">
+    <!-- Banner -->
+    <div class="banner">
+        <h1>F1 World</h1>
+    </div>
 
-        <!-- Left Sidebar -->
-        <aside class="sidebar left-sidebar">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="drivers.html">2026 Drivers</a></li>
-                <li><a href="teams.html">2026 Teams</a></li>
-                <li><a href="races.html">Race Calendar</a></li>
-                <li><a href="news.html">Latest News</a></li>
-            </ul>
-            <h3>More</h3>
-            <ul>
-                <li><a href="about.html">About F1</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </aside>
+    <!-- Row: Content + Sidebar -->
+    <div class="row">
 
-        <!-- Main Content -->
-        <main>
-            <h2>Welcome to F1 World</h2>
+        <div class="content">
+            <h1>Welcome to F1 World</h1>
             <p>
                 Your home for everything Formula 1. Explore driver profiles,
                 team information, the 2026 race calendar, and the latest news
                 straight from the paddock.
             </p>
 
-            <!-- Feature Cards -->
-            <div class="cards-row">
-                <div class="card">
-                    <h3>Latest News</h3>
-                    <p>Stay updated with race reports, team announcements, and exclusive insights from the world of Formula 1.</p>
-                    <a href="news.html">Read More &rsaquo;</a>
-                </div>
-                <div class="card">
-                    <h3>Top Drivers</h3>
-                    <p>Discover the world's best drivers, their stats, career highlights, and the stories behind their success.</p>
-                    <a href="drivers.html">View Drivers &rsaquo;</a>
-                </div>
-                <div class="card">
-                    <h3>Race Schedule</h3>
-                    <p>Explore the full 2026 season calendar with upcoming races, circuits, and key event details.</p>
-                    <a href="races.html">View Races &rsaquo;</a>
-                </div>
-            </div>
+            <h2>What is Formula 1?</h2>
+            <p>
+                Formula 1 is the highest class of international racing for open-wheel
+                single-seater formula racing cars. The season consists of a series of
+                races, known as Grands Prix, held worldwide on purpose-built circuits
+                and closed public roads.
+            </p>
 
             <h2>2026 Season at a Glance</h2>
-            <p>The 2026 Formula 1 World Championship is one of the most exciting seasons in history. Here are the key numbers:</p>
             <table>
-                <tr>
-                    <th>Fact</th>
-                    <th>Number</th>
-                </tr>
-                <tr>
-                    <td>Total Races</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>Drivers</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Teams</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Continents</td>
-                    <td>5</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Fact</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Races</td>
+                        <td>24 Grands Prix</td>
+                    </tr>
+                    <tr>
+                        <td>Drivers</td>
+                        <td>20 drivers competing</td>
+                    </tr>
+                    <tr>
+                        <td>Teams</td>
+                        <td>10 constructor teams</td>
+                    </tr>
+                    <tr>
+                        <td>Continents</td>
+                        <td>5 continents covered</td>
+                    </tr>
+                    <tr>
+                        <td>Season Start</td>
+                        <td>March 2026 - Australia</td>
+                    </tr>
+                    <tr>
+                        <td>Season End</td>
+                        <td>November 2026 - Abu Dhabi</td>
+                    </tr>
+                </tbody>
             </table>
-        </main>
+        </div>
 
-        <!-- Right Sidebar -->
-        <aside class="sidebar right-sidebar">
+        <div class="right_side_bar">
+            <h3>Quick Links</h3>
+            <p><a href="drivers.html">2026 Drivers</a></p>
+            <p><a href="teams.html">2026 Teams</a></p>
+            <p><a href="races.html">Race Calendar</a></p>
+            <p><a href="news.html">Latest News</a></p>
+            <p><a href="about.html">About F1</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+
             <h3>Did You Know?</h3>
-            <ul>
-                <li>F1 cars can reach 370 km/h</li>
-                <li>Pit stops take under 3 seconds</li>
-                <li>Engines rev up to 15,000 RPM</li>
-                <li>Drivers feel up to 5G in corners</li>
-            </ul>
-            <h3>Top Teams</h3>
-            <ul>
-                <li><a href="teams.html">Red Bull</a></li>
-                <li><a href="teams.html">Ferrari</a></li>
-                <li><a href="teams.html">Mercedes</a></li>
-                <li><a href="teams.html">McLaren</a></li>
-            </ul>
-        </aside>
+            <p>F1 cars can reach speeds of over 370 km/h.</p>
+            <p>A full pit stop takes under 3 seconds.</p>
+            <p>Drivers experience up to 5G of force in corners.</p>
+            <p>Engines rev at up to 15,000 RPM.</p>
+        </div>
 
-    </div><!-- end .container -->
+    </div><!-- end .row -->
 
     <!-- Footer -->
-    <footer>
-        <p>
-            <a href="index.html">Home</a>
-            <a href="drivers.html">Drivers</a>
-            <a href="teams.html">Teams</a>
-            <a href="races.html">Races</a>
-            <a href="contact.html">Contact</a>
-        </p>
-        <p>&copy; 2026 F1 World. All Rights Reserved.</p>
-    </footer>
+    <div class="footer">
+        &copy; F1 World 2026
+    </div>
 
 </body>
 </html>
