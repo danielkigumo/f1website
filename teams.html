@@ -3,138 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams - F1 World</title>
+    <title>Teams | F1 World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <div class="toplink">
-        <a href="index.html">Home</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="races.html">Races</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>F1 World</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-sm ms-3">Light Mode</button>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Banner -->
-    <div class="banner">
+    <!-- ===== PAGE BANNER ===== -->
+    <div class="page-banner">
         <h1>2026 Teams</h1>
+        <p>The 10 constructor teams competing for the World Championship.</p>
     </div>
 
-    <!-- Row: Content + Sidebar -->
-    <div class="row">
-
-        <div class="content">
-            <h1>F1 Teams 2026</h1>
-            <p>
-                There are 10 teams competing in the 2026 Formula 1 World Championship.
-                Each team enters two cars and two drivers per season.
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Team Name</th>
-                        <th>Base</th>
-                        <th>Power Unit</th>
-                        <th>World Titles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Red Bull Racing</td>
-                        <td>Milton Keynes, UK</td>
-                        <td>Honda RBPT</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Scuderia Ferrari</td>
-                        <td>Maranello, Italy</td>
-                        <td>Ferrari</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>Mercedes-AMG PETRONAS</td>
-                        <td>Brackley, UK</td>
-                        <td>Mercedes</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>McLaren F1 Team</td>
-                        <td>Woking, UK</td>
-                        <td>Mercedes</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>Aston Martin Aramco</td>
-                        <td>Silverstone, UK</td>
-                        <td>Mercedes</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Alpine F1 Team</td>
-                        <td>Enstone, UK</td>
-                        <td>Renault</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Williams Racing</td>
-                        <td>Grove, UK</td>
-                        <td>Mercedes</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>Haas F1 Team</td>
-                        <td>Kannapolis, USA</td>
-                        <td>Ferrari</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Visa Cash App RB</td>
-                        <td>Faenza, Italy</td>
-                        <td>Honda RBPT</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Stake F1 / Sauber</td>
-                        <td>Hinwil, Switzerland</td>
-                        <td>Ferrari</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Team Name</th>
-                        <th>Base</th>
-                        <th>Power Unit</th>
-                        <th>World Titles</th>
-                    </tr>
-                </tfoot>
-            </table>
+    <!-- ===== TEAMS TABLE ===== -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">All Constructors</h2>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Base</th>
+                            <th>Power Unit</th>
+                            <th>Drivers</th>
+                            <th class="text-end">World Titles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Red Bull Racing</td>
+                            <td style="color:#9e9e9e;">Milton Keynes, UK</td>
+                            <td style="color:#9e9e9e;">Honda RBPT</td>
+                            <td style="color:#9e9e9e;">Verstappen, Perez</td>
+                            <td class="text-end">6</td>
+                        </tr>
+                        <tr>
+                            <td>Scuderia Ferrari</td>
+                            <td style="color:#9e9e9e;">Maranello, Italy</td>
+                            <td style="color:#9e9e9e;">Ferrari</td>
+                            <td style="color:#9e9e9e;">Hamilton, Leclerc</td>
+                            <td class="text-end">16</td>
+                        </tr>
+                        <tr>
+                            <td>McLaren F1 Team</td>
+                            <td style="color:#9e9e9e;">Woking, UK</td>
+                            <td style="color:#9e9e9e;">Mercedes</td>
+                            <td style="color:#9e9e9e;">Norris, Piastri</td>
+                            <td class="text-end">8</td>
+                        </tr>
+                        <tr>
+                            <td>Mercedes-AMG Petronas</td>
+                            <td style="color:#9e9e9e;">Brackley, UK</td>
+                            <td style="color:#9e9e9e;">Mercedes</td>
+                            <td style="color:#9e9e9e;">Russell, Antonelli</td>
+                            <td class="text-end">8</td>
+                        </tr>
+                        <tr>
+                            <td>Aston Martin Aramco</td>
+                            <td style="color:#9e9e9e;">Silverstone, UK</td>
+                            <td style="color:#9e9e9e;">Mercedes</td>
+                            <td style="color:#9e9e9e;">Alonso, Stroll</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                        <tr>
+                            <td>Williams Racing</td>
+                            <td style="color:#9e9e9e;">Grove, UK</td>
+                            <td style="color:#9e9e9e;">Mercedes</td>
+                            <td style="color:#9e9e9e;">Sainz, Albon</td>
+                            <td class="text-end">7</td>
+                        </tr>
+                        <tr>
+                            <td>Alpine F1 Team</td>
+                            <td style="color:#9e9e9e;">Enstone, UK</td>
+                            <td style="color:#9e9e9e;">Renault</td>
+                            <td style="color:#9e9e9e;">Gasly, Doohan</td>
+                            <td class="text-end">2</td>
+                        </tr>
+                        <tr>
+                            <td>MoneyGram Haas F1</td>
+                            <td style="color:#9e9e9e;">Kannapolis, USA</td>
+                            <td style="color:#9e9e9e;">Ferrari</td>
+                            <td style="color:#9e9e9e;">Hulkenberg, Bearman</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                        <tr>
+                            <td>Visa Cash App RB</td>
+                            <td style="color:#9e9e9e;">Faenza, Italy</td>
+                            <td style="color:#9e9e9e;">Honda RBPT</td>
+                            <td style="color:#9e9e9e;">Tsunoda, Lawson</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                        <tr>
+                            <td>Stake F1 / Sauber</td>
+                            <td style="color:#9e9e9e;">Hinwil, Switzerland</td>
+                            <td style="color:#9e9e9e;">Ferrari</td>
+                            <td style="color:#9e9e9e;">Bottas, Zhou</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+    </section>
 
-        <div class="right_side_bar">
-            <h3>Team Facts</h3>
-            <p>10 teams in the 2026 season.</p>
-            <p>Each team enters 2 drivers.</p>
-            <p>Ferrari holds the most constructor titles with 16.</p>
-            <p>Most teams are based in the United Kingdom.</p>
-
-            <h3>Navigate</h3>
-            <p><a href="drivers.html">All Drivers</a></p>
-            <p><a href="races.html">Race Calendar</a></p>
-            <p><a href="index.html">Back to Home</a></p>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">F1 World</div>
+            <div class="mb-2">
+                <a href="index.html">Home</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="teams.html">Teams</a>
+                <a href="news.html">News</a>
+                <a href="standings.html">Standings</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p>&copy; 2026 F1 World. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    </div><!-- end .row -->
-
-    <!-- Footer -->
-    <div class="footer">
-        &copy; F1 World 2026
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

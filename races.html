@@ -3,162 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Race Calendar - F1 World</title>
+    <title>Race Calendar | Formula 1 World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <div class="toplink">
-        <a href="index.html">Home</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="races.html">Races</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- Banner -->
-    <div class="banner">
-        <h1>2026 Race Calendar</h1>
-    </div>
-
-    <!-- Row: Content + Sidebar -->
-    <div class="row">
-
-        <div class="content">
-            <h1>2026 Race Calendar</h1>
-            <p>
-                The 2026 Formula 1 World Championship features 24 races across 5 continents,
-                running from March to November 2026.
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Round</th>
-                        <th>Date</th>
-                        <th>Grand Prix</th>
-                        <th>Circuit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>14 March</td>
-                        <td>Australian Grand Prix</td>
-                        <td>Albert Park, Melbourne</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>28 March</td>
-                        <td>Saudi Arabian Grand Prix</td>
-                        <td>Jeddah Corniche Circuit</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>11 April</td>
-                        <td>Japanese Grand Prix</td>
-                        <td>Suzuka International Racing Course</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>25 April</td>
-                        <td>Bahrain Grand Prix</td>
-                        <td>Bahrain International Circuit</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>09 May</td>
-                        <td>Miami Grand Prix</td>
-                        <td>Miami International Autodrome</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>25 May</td>
-                        <td>Monaco Grand Prix</td>
-                        <td>Circuit de Monaco, Monte Carlo</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>08 June</td>
-                        <td>Spanish Grand Prix</td>
-                        <td>Circuit de Barcelona-Catalunya</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>22 June</td>
-                        <td>Canadian Grand Prix</td>
-                        <td>Circuit Gilles Villeneuve, Montreal</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>06 July</td>
-                        <td>British Grand Prix</td>
-                        <td>Silverstone Circuit, UK</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>27 July</td>
-                        <td>Belgian Grand Prix</td>
-                        <td>Circuit de Spa-Francorchamps</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>03 August</td>
-                        <td>Hungarian Grand Prix</td>
-                        <td>Hungaroring, Budapest</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>31 August</td>
-                        <td>Dutch Grand Prix</td>
-                        <td>Circuit Zandvoort, Netherlands</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>07 September</td>
-                        <td>Italian Grand Prix</td>
-                        <td>Autodromo Nazionale Monza</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Round</th>
-                        <th>Date</th>
-                        <th>Grand Prix</th>
-                        <th>Circuit</th>
-                    </tr>
-                </tfoot>
-            </table>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-flag-checkered me-2"></i>F1 WORLD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="schedule.html">Races</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="right_side_bar">
-            <h3>Season Summary</h3>
-            <p><strong>Total Races:</strong> 24</p>
-            <p><strong>Continents:</strong> 5</p>
-            <p><strong>Start:</strong> March 2026</p>
-            <p><strong>End:</strong> November 2026</p>
-
-            <h3>Notable Races</h3>
-            <p>Monaco GP &mdash; May</p>
-            <p>British GP &mdash; July</p>
-            <p>Italian GP &mdash; September</p>
-            <p>Abu Dhabi GP &mdash; November</p>
-
-            <h3>Navigate</h3>
-            <p><a href="drivers.html">Drivers</a></p>
-            <p><a href="teams.html">Teams</a></p>
-            <p><a href="index.html">Back to Home</a></p>
+    <!-- Page Header -->
+    <header class="bg-dark text-white py-5 mb-5" style="border-bottom: 4px solid #e10600;">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">2026 RACE CALENDAR</h1>
+            <p class="lead">From the glamour of Monaco to the speed of Monza.</p>
         </div>
+    </header>
 
-    </div><!-- end .row -->
+    <main class="container mb-5">
+        <div class="row g-4">
+            <!-- Race 1 -->
+            <div class="col-12">
+                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
+                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
+                        <span class="h4 mb-0 fw-bold">14</span>
+                        <span class="small text-uppercase">MAR</span>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="h5 mb-1">Australian Grand Prix</h3>
+                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Albert Park Circuit, Melbourne</p>
+                            </div>
+                            <span class="badge bg-dark">ROUND 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Race 2 -->
+            <div class="col-12">
+                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
+                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
+                        <span class="h4 mb-0 fw-bold">28</span>
+                        <span class="small text-uppercase">MAR</span>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="h5 mb-1">Saudi Arabian Grand Prix</h3>
+                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Jeddah Corniche Circuit, Jeddah</p>
+                            </div>
+                            <span class="badge bg-dark">ROUND 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Race 3 -->
+            <div class="col-12">
+                <div class="d-flex bg-white shadow-sm rounded overflow-hidden">
+                    <div class="bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4" style="min-width: 120px;">
+                        <span class="h4 mb-0 fw-bold">11</span>
+                        <span class="small text-uppercase">APR</span>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h3 class="h5 mb-1">Japanese Grand Prix</h3>
+                                <p class="text-muted small mb-0"><i class="fas fa-map-marker-alt me-2"></i>Suzuka International Racing Course</p>
+                            </div>
+                            <span class="badge bg-dark">ROUND 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <div class="footer">
-        &copy; F1 World 2026
-    </div>
+    <footer class="py-5">
+        <div class="container text-center">
+            <p>&copy; 2026 Formula 1 World. All Rights Reserved.</p>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

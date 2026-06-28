@@ -3,125 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - F1 World</title>
+    <title>About | F1 World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <div class="toplink">
-        <a href="index.html">Home</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="races.html">Races</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>F1 World</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link " href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link " href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-sm ms-3">Light Mode</button>
+            </div>
+        </div>
+    </nav>
+
+        <div class="page-banner">
+        <h1>About This Site</h1>
+        <p>Why I built it and what F1 actually is.</p>
     </div>
 
-    <!-- Banner -->
-    <div class="banner">
-        <h1>About Formula 1</h1>
-    </div>
+    <section style="padding: 60px 0;">
+        <div class="container">
 
-    <!-- Row: Content + Sidebar -->
-    <div class="row">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Why I chose F1</h2>
+                    <p style="color:#9e9e9e; font-size:1.05rem; line-height:1.8;">
+                        I needed a topic for my web development project and F1 was the first 
+                        thing that made sense. I watched it for a while — got into it mainly 
+                        because of George Russell, who I thought was genuinely one of the 
+                        more interesting drivers on the grid. Eventually I stopped watching 
+                        because the races started feeling long and I did not always have the 
+                        time, but I still think the sport itself is fascinating from a 
+                        technical and competitive standpoint.
+                    </p>
+                    <p style="color:#9e9e9e; font-size:1.05rem; line-height:1.8;">
+                        The project gave me a reason to actually look into it properly — 
+                        the teams, the standings, how the points system works. This site 
+                        covers the 2026 season with driver profiles, team information, 
+                        and a news section.
+                    </p>
+                </div>
+            </div>
 
-        <div class="content">
-            <h1>About Formula 1</h1>
-            <p>
-                Formula 1 is the highest class of international racing for open-wheel
-                single-seater formula racing cars sanctioned by the Federation Internationale
-                de l'Automobile (FIA).
-            </p>
+            <h2 class="section-title">What is Formula 1?</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-8">
+                    <p style="color:#9e9e9e; line-height:1.8;">
+                        Formula 1 is the top level of single-seater car racing. The word 
+                        "formula" refers to the rules every team has to follow when building 
+                        their car — things like engine size, weight limits, and aerodynamic 
+                        restrictions. Within those rules, the teams try to build the fastest 
+                        car possible.
+                    </p>
+                    <p style="color:#9e9e9e; line-height:1.8;">
+                        The season runs from March to November with around 24 races in 
+                        different countries. At the end, whoever has the most points wins 
+                        the World Championship — there is one for the drivers and a separate 
+                        one for the constructors (the teams). It has been running since 1950.
+                    </p>
+                    <p style="color:#9e9e9e; line-height:1.8;">
+                        What makes it interesting to me is the engineering side. These cars 
+                        do 370 km/h, pit stops take under 3 seconds, and the difference 
+                        between winning and losing is often less than a tenth of a second. 
+                        There is a lot going on beyond just driving fast.
+                    </p>
+                </div>
+            </div>
 
-            <h2>What is Formula 1?</h2>
-            <p>
-                The word "formula" in the name refers to the set of rules to which all
-                participants' cars must conform. A Formula One season consists of a series
-                of races, known as Grands Prix, which take place worldwide on both
-                purpose-built circuits and closed public roads.
-            </p>
-            <p>
-                Results of each race are used to determine two annual World Championships:
-                one for the drivers and one for the constructors. The sport has been running
-                since 1950, making it one of the oldest motorsport championships in the world.
-            </p>
+            <h2 class="section-title">Quick Facts</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div style="background:#1e1e1e; border:1px solid #2a2a2a; border-top:3px solid #e10600; padding:25px; border-radius:4px;">
+                        <h5 style="color:#fff; font-weight:900; text-transform:uppercase; margin-bottom:8px;">The Speed</h5>
+                        <p style="color:#9e9e9e; font-size:0.9rem; margin:0;">Top speed is around 370 km/h. Drivers pull up to 5G of force through fast corners, which is roughly five times their own body weight pushing against them.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="background:#1e1e1e; border:1px solid #2a2a2a; border-top:3px solid #e10600; padding:25px; border-radius:4px;">
+                        <h5 style="color:#fff; font-weight:900; text-transform:uppercase; margin-bottom:8px;">The Pit Stops</h5>
+                        <p style="color:#9e9e9e; font-size:0.9rem; margin:0;">A full tyre change takes under 3 seconds with a team of over 20 mechanics. The record is around 1.8 seconds. That part never gets old to watch.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div style="background:#1e1e1e; border:1px solid #2a2a2a; border-top:3px solid #e10600; padding:25px; border-radius:4px;">
+                        <h5 style="color:#fff; font-weight:900; text-transform:uppercase; margin-bottom:8px;">The Season</h5>
+                        <p style="color:#9e9e9e; font-size:0.9rem; margin:0;">24 races in 2026 across 5 continents. 10 teams, 20 drivers. Ferrari holds the most constructor championships with 16, though Mercedes dominated the hybrid era.</p>
+                    </div>
+                </div>
+            </div>
 
-            <h2>The Technology</h2>
-            <p>
-                Formula 1 cars are the most technologically advanced racing cars in the world.
-                Each car is built from carbon fibre and uses a hybrid turbocharged engine.
-                The cars can reach speeds of over 370 km/h and corner at forces of up to 5G,
-                meaning drivers feel five times their own body weight pushing against them in corners.
-            </p>
-            <p>
-                Pit stops are another remarkable feat of technology and teamwork. A full tyre
-                change can be completed in <span class="underline">under 2.5 seconds</span>
-                by a team of over 20 mechanics working in perfect coordination.
-            </p>
-
-            <h2>Key Facts</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Topic</th>
-                        <th>Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>First Season</td>
-                        <td>1950</td>
-                    </tr>
-                    <tr>
-                        <td>Governing Body</td>
-                        <td>FIA (Federation Internationale de l'Automobile)</td>
-                    </tr>
-                    <tr>
-                        <td>Top Speed</td>
-                        <td>Over 370 km/h</td>
-                    </tr>
-                    <tr>
-                        <td>Engine Type</td>
-                        <td>1.6L V6 Hybrid Turbo</td>
-                    </tr>
-                    <tr>
-                        <td>Most Successful Driver</td>
-                        <td>Lewis Hamilton (7 Championships)</td>
-                    </tr>
-                    <tr>
-                        <td>Most Successful Team</td>
-                        <td>Ferrari (16 Constructor Titles)</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-
-        <div class="right_side_bar">
-            <h3>F1 Records</h3>
-            <p>Most race wins: Hamilton (103)</p>
-            <p>Most championships: Hamilton (7)</p>
-            <p>Most pole positions: Hamilton (104)</p>
-            <p>Most constructor titles: Ferrari (16)</p>
-
-            <h3>On This Page</h3>
-            <p>What is Formula 1?</p>
-            <p>The Technology</p>
-            <p>Key Facts</p>
-
-            <h3>Navigate</h3>
-            <p><a href="drivers.html">Drivers</a></p>
-            <p><a href="teams.html">Teams</a></p>
-            <p><a href="index.html">Back to Home</a></p>
-        </div>
-
-    </div><!-- end .row -->
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
-        &copy; F1 World 2026
-    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-brand">F1 World</div>
+            <div class="mb-2">
+                <a href="index.html">Home</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="teams.html">Teams</a>
+                <a href="standings.html">Standings</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p>&copy; 2026 F1 World. All Rights Reserved.</p>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

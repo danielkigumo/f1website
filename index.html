@@ -3,105 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 World - Home</title>
+    <title>F1 World - 2026 Season Tracker</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <div class="toplink">
-        <a href="index.html">Home</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="races.html">Races</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- Banner -->
-    <div class="banner">
-        <h1>F1 World</h1>
-    </div>
-
-    <!-- Row: Content + Sidebar -->
-    <div class="row">
-
-        <div class="content">
-            <h1>Welcome to F1 World</h1>
-            <p>
-                Your home for everything Formula 1. Explore driver profiles,
-                team information, the 2026 race calendar, and the latest news
-                straight from the paddock.
-            </p>
-
-            <h2>What is Formula 1?</h2>
-            <p>
-                Formula 1 is the highest class of international racing for open-wheel
-                single-seater formula racing cars. The season consists of a series of
-                races, known as Grands Prix, held worldwide on purpose-built circuits
-                and closed public roads.
-            </p>
-
-            <h2>2026 Season at a Glance</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fact</th>
-                        <th>Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Total Races</td>
-                        <td>24 Grands Prix</td>
-                    </tr>
-                    <tr>
-                        <td>Drivers</td>
-                        <td>20 drivers competing</td>
-                    </tr>
-                    <tr>
-                        <td>Teams</td>
-                        <td>10 constructor teams</td>
-                    </tr>
-                    <tr>
-                        <td>Continents</td>
-                        <td>5 continents covered</td>
-                    </tr>
-                    <tr>
-                        <td>Season Start</td>
-                        <td>March 2026 - Australia</td>
-                    </tr>
-                    <tr>
-                        <td>Season End</td>
-                        <td>November 2026 - Abu Dhabi</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- ===== NAVBAR ===== -->
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>F1 World</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link " href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link " href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-sm ms-3">Light Mode</button>
+            </div>
         </div>
+    </nav>
 
-        <div class="right_side_bar">
-            <h3>Quick Links</h3>
-            <p><a href="drivers.html">2026 Drivers</a></p>
-            <p><a href="teams.html">2026 Teams</a></p>
-            <p><a href="races.html">Race Calendar</a></p>
-            <p><a href="news.html">Latest News</a></p>
-            <p><a href="about.html">About F1</a></p>
-            <p><a href="contact.html">Contact Us</a></p>
-
-            <h3>Did You Know?</h3>
-            <p>F1 cars can reach speeds of over 370 km/h.</p>
-            <p>A full pit stop takes under 3 seconds.</p>
-            <p>Drivers experience up to 5G of force in corners.</p>
-            <p>Engines rev at up to 15,000 RPM.</p>
+    <!-- ===== HERO SECTION ===== -->
+        <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="hero-title">Formula 1<br>World</h1>
+                    <p class="hero-subtitle">A 2026 Season Tracker</p>
+                    <p class="mt-3" style="color: #ccc; max-width: 480px;">
+                        I built this site as my web development project. F1 was the first thing 
+                        that came to mind — I used to follow it for a while and it has 
+                        enough data to make an interesting site. Drivers, teams, race calendar, 
+                        standings — it is all here.
+                    </p>
+                    <a href="drivers.html" class="btn btn-f1 mt-4 me-2">Meet the Drivers</a>
+                    <a href="standings.html" class="btn mt-4" style="border:1px solid #fff; color:#fff; padding:12px 30px; border-radius:4px; font-weight:700; text-transform:uppercase; font-size:0.9rem;">
+                        2026 Standings
+                    </a>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div><!-- end .row -->
+    <!-- ===== FEATURE CARDS ===== -->
+        <section style="padding: 60px 0; background-color: #111;">
+        <div class="container">
+            <div class="row g-4">
 
-    <!-- Footer -->
-    <div class="footer">
-        &copy; F1 World 2026
-    </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>News</h3>
+                        <p>A few of the bigger stories from the 2026 season so far — transfers, testing results, and regulation changes.</p>
+                        <br>
+                        <a href="news.html">Read More &rsaquo;</a>
+                    </div>
+                </div>
 
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>Drivers</h3>
+                        <p>Profiles of the 20 drivers on the grid this season, with their teams, numbers, and career stats.</p>
+                        <br>
+                        <a href="drivers.html">View Drivers &rsaquo;</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <h3>Standings</h3>
+                        <p>Driver and constructor championship standings after the latest round of the 2026 season.</p>
+                        <br>
+                        <a href="standings.html">View Standings &rsaquo;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 2026 SEASON SNAPSHOT ===== -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">2026 Season at a Glance</h2>
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div style="border: 1px solid #2a2a2a; border-top: 3px solid #e10600; padding: 30px 10px; border-radius:4px; background:#1e1e1e;">
+                        <div style="font-size:2.5rem; font-weight:900; color:#e10600;">24</div>
+                        <div style="color:#9e9e9e; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Races</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="border: 1px solid #2a2a2a; border-top: 3px solid #e10600; padding: 30px 10px; border-radius:4px; background:#1e1e1e;">
+                        <div style="font-size:2.5rem; font-weight:900; color:#e10600;">20</div>
+                        <div style="color:#9e9e9e; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Drivers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="border: 1px solid #2a2a2a; border-top: 3px solid #e10600; padding: 30px 10px; border-radius:4px; background:#1e1e1e;">
+                        <div style="font-size:2.5rem; font-weight:900; color:#e10600;">10</div>
+                        <div style="color:#9e9e9e; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Teams</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div style="border: 1px solid #2a2a2a; border-top: 3px solid #e10600; padding: 30px 10px; border-radius:4px; background:#1e1e1e;">
+                        <div style="font-size:2.5rem; font-weight:900; color:#e10600;">5</div>
+                        <div style="color:#9e9e9e; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Continents</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">F1 World</div>
+            <div class="mb-2">
+                <a href="index.html">Home</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="teams.html">Teams</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p>&copy; 2026 F1 World. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS (needed for the mobile navbar toggle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

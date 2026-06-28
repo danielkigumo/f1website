@@ -4,111 +4,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drivers - F1 World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Top Navigation -->
-    <div class="toplink">
-        <a href="index.html">Home</a>
-        <a href="drivers.html">Drivers</a>
-        <a href="teams.html">Teams</a>
-        <a href="races.html">Races</a>
-        <a href="news.html">News</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <!-- ===== NAVBAR ===== -->
+        <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>F1 World</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link " href="teams.html">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link " href="standings.html">Standings</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-sm ms-3">Light Mode</button>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Banner -->
-    <div class="banner">
+    <!-- ===== PAGE BANNER ===== -->
+    <div class="page-banner">
         <h1>2026 Drivers</h1>
+        <p>Meet the 20 drivers competing for the World Championship</p>
     </div>
 
-    <!-- Row: Content + Sidebar -->
-    <div class="row">
+    <!-- ===== DRIVERS GRID ===== -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">All Drivers</h2>
+            <div class="row g-4">
 
-        <div class="content">
-            <h1>2026 Drivers</h1>
-            <p>Meet the 20 drivers competing for the Formula 1 World Championship in 2026.</p>
+                <!-- Max Verstappen -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-redbull">
+                        <div class="driver-card-top">
+                            <span class="driver-number">1</span>
+                            <span class="driver-flag">🇳🇱</span>
+                            <h5>Max Verstappen</h5>
+                            <div class="driver-team">Oracle Red Bull Racing</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>4</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>61</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>40</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Max Verstappen &#127475;&#127473;</h3>
-                <p><strong>Team:</strong> Oracle Red Bull Racing &nbsp;|&nbsp; <strong>Number:</strong> 1</p>
-                <p><strong>Championships:</strong> 4 &nbsp;|&nbsp; <strong>Wins:</strong> 61 &nbsp;|&nbsp; <strong>Poles:</strong> 40</p>
-            </div>
+                <!-- Lewis Hamilton -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-ferrari">
+                        <div class="driver-card-top">
+                            <span class="driver-number">44</span>
+                            <span class="driver-flag">🇬🇧</span>
+                            <h5>Lewis Hamilton</h5>
+                            <div class="driver-team">Scuderia Ferrari</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>7</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>103</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>104</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Lewis Hamilton &#127468;&#127463;</h3>
-                <p><strong>Team:</strong> Scuderia Ferrari &nbsp;|&nbsp; <strong>Number:</strong> 44</p>
-                <p><strong>Championships:</strong> 7 &nbsp;|&nbsp; <strong>Wins:</strong> 103 &nbsp;|&nbsp; <strong>Poles:</strong> 104</p>
-            </div>
+                <!-- Charles Leclerc -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-ferrari">
+                        <div class="driver-card-top">
+                            <span class="driver-number">16</span>
+                            <span class="driver-flag">🇲🇨</span>
+                            <h5>Charles Leclerc</h5>
+                            <div class="driver-team">Scuderia Ferrari</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>8</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>24</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Charles Leclerc &#127474;&#127464;</h3>
-                <p><strong>Team:</strong> Scuderia Ferrari &nbsp;|&nbsp; <strong>Number:</strong> 16</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 8 &nbsp;|&nbsp; <strong>Poles:</strong> 24</p>
-            </div>
+                <!-- Lando Norris -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-mclaren">
+                        <div class="driver-card-top">
+                            <span class="driver-number">4</span>
+                            <span class="driver-flag">🇬🇧</span>
+                            <h5>Lando Norris</h5>
+                            <div class="driver-team">McLaren F1 Team</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>4</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>7</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Lando Norris &#127468;&#127463;</h3>
-                <p><strong>Team:</strong> McLaren F1 Team &nbsp;|&nbsp; <strong>Number:</strong> 4</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 4 &nbsp;|&nbsp; <strong>Poles:</strong> 7</p>
-            </div>
+                <!-- Carlos Sainz -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-williams">
+                        <div class="driver-card-top">
+                            <span class="driver-number">55</span>
+                            <span class="driver-flag">🇪🇸</span>
+                            <h5>Carlos Sainz</h5>
+                            <div class="driver-team">Williams Racing</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>3</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>5</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Carlos Sainz &#127466;&#127480;</h3>
-                <p><strong>Team:</strong> Williams Racing &nbsp;|&nbsp; <strong>Number:</strong> 55</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 3 &nbsp;|&nbsp; <strong>Poles:</strong> 5</p>
-            </div>
+                <!-- George Russell -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-mercedes">
+                        <div class="driver-card-top">
+                            <span class="driver-number">63</span>
+                            <span class="driver-flag">🇬🇧</span>
+                            <h5>George Russell</h5>
+                            <div class="driver-team">Mercedes-AMG Petronas</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>2</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>3</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>George Russell &#127468;&#127463;</h3>
-                <p><strong>Team:</strong> Mercedes-AMG Petronas &nbsp;|&nbsp; <strong>Number:</strong> 63</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 2 &nbsp;|&nbsp; <strong>Poles:</strong> 3</p>
-            </div>
+                <!-- Fernando Alonso -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-aston">
+                        <div class="driver-card-top">
+                            <span class="driver-number">14</span>
+                            <span class="driver-flag">🇪🇸</span>
+                            <h5>Fernando Alonso</h5>
+                            <div class="driver-team">Aston Martin Aramco</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>2</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>32</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>22</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Fernando Alonso &#127466;&#127480;</h3>
-                <p><strong>Team:</strong> Aston Martin Aramco &nbsp;|&nbsp; <strong>Number:</strong> 14</p>
-                <p><strong>Championships:</strong> 2 &nbsp;|&nbsp; <strong>Wins:</strong> 32 &nbsp;|&nbsp; <strong>Poles:</strong> 22</p>
-            </div>
+                <!-- Oscar Piastri -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-mclaren">
+                        <div class="driver-card-top">
+                            <span class="driver-number">81</span>
+                            <span class="driver-flag">🇦🇺</span>
+                            <h5>Oscar Piastri</h5>
+                            <div class="driver-team">McLaren F1 Team</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>2</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>1</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Oscar Piastri &#127462;&#127482;</h3>
-                <p><strong>Team:</strong> McLaren F1 Team &nbsp;|&nbsp; <strong>Number:</strong> 81</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 2 &nbsp;|&nbsp; <strong>Poles:</strong> 1</p>
-            </div>
+                <!-- Sergio Perez -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="driver-card stripe-redbull">
+                        <div class="driver-card-top">
+                            <span class="driver-number">11</span>
+                            <span class="driver-flag">🇲🇽</span>
+                            <h5>Sergio Perez</h5>
+                            <div class="driver-team">Oracle Red Bull Racing</div>
+                        </div>
+                        <div class="driver-stats">
+                            <div>
+                                <span>Championships</span>
+                                <strong>0</strong>
+                            </div>
+                            <div>
+                                <span>Wins</span>
+                                <strong>6</strong>
+                            </div>
+                            <div>
+                                <span>Poles</span>
+                                <strong>3</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="driver-card">
-                <h3>Sergio Perez &#127474;&#127485;</h3>
-                <p><strong>Team:</strong> Oracle Red Bull Racing &nbsp;|&nbsp; <strong>Number:</strong> 11</p>
-                <p><strong>Championships:</strong> 0 &nbsp;|&nbsp; <strong>Wins:</strong> 6 &nbsp;|&nbsp; <strong>Poles:</strong> 3</p>
-            </div>
-
+            </div><!-- end row -->
         </div>
+    </section>
 
-        <div class="right_side_bar">
-            <h3>All-Time Wins</h3>
-            <p>Hamilton &mdash; 103</p>
-            <p>Verstappen &mdash; 61</p>
-            <p>Alonso &mdash; 32</p>
-            <p>Leclerc &mdash; 8</p>
-            <p>Perez &mdash; 6</p>
-            <p>Norris &mdash; 4</p>
-            <p>Sainz &mdash; 3</p>
-
-            <h3>Navigate</h3>
-            <p><a href="teams.html">All Teams</a></p>
-            <p><a href="races.html">Race Calendar</a></p>
-            <p><a href="index.html">Back to Home</a></p>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-brand">F1 World</div>
+            <div class="mb-2">
+                <a href="index.html">Home</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="teams.html">Teams</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p>&copy; 2026 F1 World. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    </div><!-- end .row -->
-
-    <!-- Footer -->
-    <div class="footer">
-        &copy; F1 World 2026
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
