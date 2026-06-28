@@ -1,9 +1,3 @@
-// =====================
-//  F1 World - script.js
-// =====================
-
-// ---- Contact Form Validation ----
-// We grab the form by its id
 var contactForm = document.getElementById("contactForm");
 
 // Only run this code if the contact form exists on the page
