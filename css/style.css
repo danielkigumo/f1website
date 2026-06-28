@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;900&display=swap');
-
-:root {
-    --f1-red: #e10600;
-    --f1-dark: #151515;
-    --f1-card: #1e1e1e;
-    --f1-gray: #9e9e9e;
-    --f1-white: #ffffff;
-    --f1-border: #2a2a2a;
-}
+/* F1 World - Custom Stylesheet */
+/* Bootstrap 5 handles the grid and responsive layout. */
+/* This file adds our custom colours and component styles on top. */
 
 * {
     box-sizing: border-box;
@@ -16,58 +9,50 @@
 }
 
 body {
-    background-color: var(--f1-dark);
-    color: var(--f1-white);
-    font-family: 'Barlow', Arial, sans-serif;
+    background-color: #151515;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.7;
 }
 
 
+/* ---- Navbar ---- */
 .navbar {
     background-color: #000000 !important;
-    border-bottom: 3px solid var(--f1-red);
+    border-bottom: 3px solid #e10600;
     padding: 12px 0;
 }
 
-.navbar-brand img {
-    height: 30px;
-}
-
 .navbar-brand span {
-    color: var(--f1-white);
+    color: #ffffff;
     font-size: 1.3rem;
-    font-weight: 900;
-    letter-spacing: 1px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .navbar-nav .nav-link {
-    color: var(--f1-white) !important;
+    color: #ffffff !important;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.85rem;
-    letter-spacing: 1px;
     padding: 8px 14px !important;
-    transition: color 0.2s;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--f1-red) !important;
+    color: #e10600 !important;
 }
 
 .navbar-toggler {
-    border-color: var(--f1-red);
+    border-color: #e10600;
 }
 
-.navbar-toggler-icon {
-    filter: invert(1);
-}
 
+/* ---- Hero Section ---- */
 .hero {
-    background: linear-gradient(to right, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.3) 100%),
-                url('https://images.unsplash.com/photo-1541773367428-7e7df2e52c77?w=1400&q=80') center/cover no-repeat;
+    background-color: #111111;
+    border-bottom: 3px solid #e10600;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -77,24 +62,23 @@ body {
 .hero-title {
     font-size: 4rem;
     font-weight: 900;
-    line-height: 1.05;
     text-transform: uppercase;
-    color: var(--f1-white);
+    color: #ffffff;
 }
 
 .hero-subtitle {
-    color: var(--f1-red);
+    color: #e10600;
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-top: 10px;
 }
 
 
+/* ---- Page Banner (used on all inner pages) ---- */
 .page-banner {
-    background-color: #000;
-    border-bottom: 3px solid var(--f1-red);
+    background-color: #000000;
+    border-bottom: 3px solid #e10600;
     padding: 40px 0;
     text-align: center;
 }
@@ -103,109 +87,96 @@ body {
     font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: var(--f1-white);
+    color: #ffffff;
 }
 
 .page-banner p {
-    color: var(--f1-gray);
+    color: #9e9e9e;
     font-size: 1rem;
 }
 
+
+/* ---- Feature Cards (Home page) ---- */
 .feature-card {
-    background-color: var(--f1-card);
-    border: 1px solid var(--f1-border);
-    border-top: 3px solid var(--f1-red);
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-top: 3px solid #e10600;
     border-radius: 4px;
     padding: 30px 25px;
     height: 100%;
-    transition: transform 0.2s, border-color 0.2s;
 }
 
 .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--f1-red);
+    border-color: #e10600;
 }
 
 .feature-card h3 {
     font-size: 1.1rem;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
     margin-bottom: 12px;
-    color: var(--f1-white);
+    color: #ffffff;
 }
 
 .feature-card p {
-    color: var(--f1-gray);
+    color: #9e9e9e;
     font-size: 0.95rem;
 }
 
 .feature-card a {
-    color: var(--f1-red);
+    color: #e10600;
     font-weight: 700;
     text-decoration: none;
     font-size: 0.9rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .feature-card a:hover {
     text-decoration: underline;
 }
 
+
+/* ---- Section Title ---- */
 .section-title {
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    color: var(--f1-white);
-    border-left: 4px solid var(--f1-red);
+    color: #ffffff;
+    border-left: 4px solid #e10600;
     padding-left: 14px;
     margin-bottom: 30px;
 }
 
 
+/* ---- Driver Cards ---- */
 .driver-card {
-    background-color: var(--f1-card);
-    border: 1px solid var(--f1-border);
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
     border-radius: 4px;
     overflow: hidden;
-    transition: transform 0.2s;
 }
 
 .driver-card:hover {
-    transform: translateY(-4px);
+    border-color: #e10600;
 }
 
 .driver-card-top {
-    background-color: #000;
-    padding: 20px 20px 0 20px;
-    position: relative;
-}
-
-.driver-number {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--f1-red);
-    opacity: 0.2;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    line-height: 1;
+    background-color: #000000;
+    padding: 20px;
 }
 
 .driver-card-top h5 {
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    color: var(--f1-white);
+    color: #ffffff;
     margin: 0;
 }
 
 .driver-team {
-    color: var(--f1-gray);
-    font-size: 0.8rem;
+    color: #9e9e9e;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .driver-flag {
@@ -216,25 +187,25 @@ body {
 
 .driver-stats {
     padding: 15px 20px;
-    border-top: 1px solid var(--f1-border);
+    border-top: 1px solid #2a2a2a;
     display: flex;
-    gap: 20px;
 }
 
 .driver-stats span {
     font-size: 0.8rem;
-    color: var(--f1-gray);
+    color: #9e9e9e;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    margin-right: 20px;
 }
 
 .driver-stats strong {
     display: block;
     font-size: 1.1rem;
-    font-weight: 900;
-    color: var(--f1-white);
+    font-weight: 700;
+    color: #ffffff;
 }
 
+/* Team colour stripe on each driver card */
 .stripe-mercedes { border-top: 4px solid #00d2be; }
 .stripe-redbull   { border-top: 4px solid #0600ef; }
 .stripe-ferrari   { border-top: 4px solid #dc0000; }
@@ -246,125 +217,118 @@ body {
 .stripe-rb        { border-top: 4px solid #1434cb; }
 .stripe-sauber    { border-top: 4px solid #52e252; }
 
-/* ---- Contact Form ---- */
-.contact-section {
-    padding: 60px 0;
-}
 
+/* ---- Contact Form ---- */
 .contact-form-wrapper {
-    background-color: var(--f1-card);
-    border: 1px solid var(--f1-border);
-    border-top: 3px solid var(--f1-red);
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-top: 3px solid #e10600;
     border-radius: 4px;
     padding: 40px;
 }
 
 .contact-form-wrapper label {
-    color: var(--f1-gray);
+    color: #9e9e9e;
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
     margin-bottom: 6px;
 }
 
 .contact-form-wrapper .form-control,
 .contact-form-wrapper .form-select {
-    background-color: #111;
-    border: 1px solid var(--f1-border);
-    color: var(--f1-white);
+    background-color: #111111;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
     border-radius: 4px;
     padding: 12px 16px;
     font-size: 1rem;
-    font-family: 'Barlow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .contact-form-wrapper .form-control:focus,
 .contact-form-wrapper .form-select:focus {
-    background-color: #111;
-    border-color: var(--f1-red);
-    color: var(--f1-white);
-    box-shadow: 0 0 0 2px rgba(225, 6, 0, 0.25);
+    background-color: #111111;
+    border-color: #e10600;
+    color: #ffffff;
 }
 
 .contact-form-wrapper .form-control::placeholder {
-    color: #555;
+    color: #555555;
 }
 
 .btn-f1 {
-    background-color: var(--f1-red);
-    color: var(--f1-white);
+    background-color: #e10600;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
     border: none;
     padding: 12px 30px;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.2s;
 }
 
 .btn-f1:hover {
     background-color: #b80500;
-    color: var(--f1-white);
+    color: #ffffff;
 }
 
 .error-msg {
-    color: var(--f1-red);
-    font-size: 0.82rem;
+    color: #e10600;
+    font-size: 0.85rem;
     margin-top: 4px;
     display: none;
 }
 
 .contact-info-box {
-    background-color: var(--f1-card);
-    border: 1px solid var(--f1-border);
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
     border-radius: 4px;
     padding: 25px;
     margin-bottom: 20px;
 }
 
 .contact-info-box h5 {
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 0.95rem;
-    color: var(--f1-white);
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
 .contact-info-box p {
-    color: var(--f1-gray);
+    color: #9e9e9e;
     font-size: 0.9rem;
     margin: 0;
 }
 
 .contact-info-box a {
-    color: var(--f1-red);
+    color: #e10600;
     text-decoration: none;
 }
 
+
 /* ---- Footer ---- */
 footer {
-    background-color: #000;
-    border-top: 3px solid var(--f1-red);
+    background-color: #000000;
+    border-top: 3px solid #e10600;
     padding: 30px 0;
     text-align: center;
-    color: var(--f1-gray);
+    color: #9e9e9e;
     font-size: 0.9rem;
 }
 
 footer .footer-brand {
     font-size: 1.2rem;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    color: var(--f1-white);
-    letter-spacing: 2px;
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
 footer a {
-    color: var(--f1-gray);
+    color: #9e9e9e;
     text-decoration: none;
     margin: 0 10px;
     font-size: 0.85rem;
@@ -372,10 +336,12 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--f1-red);
+    color: #e10600;
 }
 
-/* ---- Responsive tweaks ---- */
+
+/* ---- Responsive ---- */
+/* On screens smaller than 768px, shrink the hero title */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
@@ -385,4 +351,48 @@ footer a:hover {
         min-height: 380px;
         padding: 60px 0;
     }
+}
+
+
+/* ---- Light Mode ---- */
+/* This class is added to body when the toggle button is clicked */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #111111;
+}
+
+body.light-mode .navbar {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid #e10600;
+}
+
+body.light-mode .navbar-brand span,
+body.light-mode .navbar-nav .nav-link {
+    color: #111111 !important;
+}
+
+body.light-mode footer {
+    background-color: #222222;
+}
+
+body.light-mode .feature-card {
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+
+/* ---- Dark Mode Toggle Button ---- */
+#darkModeToggle {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#darkModeToggle:hover {
+    background-color: #e10600;
+    border-color: #e10600;
 }
