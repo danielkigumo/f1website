@@ -106,9 +106,7 @@ body {
     height: 100%;
 }
 
-.feature-card:hover {
-    border-color: #e10600;
-}
+
 
 .feature-card h3 {
     font-size: 1.1rem;
@@ -156,9 +154,7 @@ body {
     overflow: hidden;
 }
 
-.driver-card:hover {
-    border-color: #e10600;
-}
+
 
 .driver-card-top {
     background-color: #000000;
@@ -222,7 +218,6 @@ body {
 .contact-form-wrapper {
     background-color: #1e1e1e;
     border: 1px solid #2a2a2a;
-    border-top: 3px solid #e10600;
     border-radius: 4px;
     padding: 40px;
 }
